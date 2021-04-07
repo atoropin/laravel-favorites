@@ -1,0 +1,23 @@
+{
+  "name": "rir/favorites",
+  "description": "Favorites for Laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrey Toropin",
+      "email": "at@rusatom.dev"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Rir\\Favorites\\": "/src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Rir\\Favorites\\FavoritesServiceProvider"
+      ]
+    }
+  }
+}
