@@ -1,6 +1,6 @@
 <?php
 
-namespace Rir\Favorites\Controllers;
+namespace Smartopolis\Favorites\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\FavoriteResource;

@@ -1,6 +1,6 @@
 {
-  "name": "rir/favorites",
-  "description": "Favorites for Laravel",
+  "name": "smartopolis/favorites",
+  "description": "Favorites for Laravel (Model + migration, Trait and Api method)",
   "license": "MIT",
   "authors": [
     {
@@ -16,7 +16,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Rir\\Favorites\\FavoritesServiceProvider"
+        "Smartopolis\\Favorites\\FavoritesServiceProvider"
       ]
     }
   }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Rir\Favorites\Traits;
+namespace Smartopolis\Favorites\Traits;
 
-use Rir\Favorites\Models\Favorite;
+use Smartopolis\Favorites\Models\Favorite;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\Relation;

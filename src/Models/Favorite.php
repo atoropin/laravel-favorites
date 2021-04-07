@@ -1,6 +1,6 @@
 <?php
 
-namespace Rir\Favorites\Models;
+namespace Smartopolis\Favorites\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;

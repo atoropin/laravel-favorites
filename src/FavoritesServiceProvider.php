@@ -1,6 +1,6 @@
 <?php
 
-namespace Rir\Favorites;
+namespace Smartopolis\Favorites;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -21,6 +21,8 @@ class FavoritesServiceProvider extends ServiceProvider
         $this->registerMigrations();
 
         $this->registerConfig();
+
+        $this->registerRoutes();
     }
 
     /**
@@ -54,7 +56,7 @@ class FavoritesServiceProvider extends ServiceProvider
      */
     private function registerRoutes()
     {
-        Route::namespace('Rir\Favorites\Controllers')
+        Route::namespace('Smartopolis\Favorites\Controllers')
             ->group(function () {
                 $this->loadRoutesFrom(__DIR__ . '/routes.php');
             });
