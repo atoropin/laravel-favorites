@@ -5,10 +5,10 @@ namespace Rir\Favorites;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Class UnitellerServiceProvider
+ * Class FavoritesServiceProvider
  * @package App\Providers
  */
-class FavoriteServiceProvider extends ServiceProvider
+class FavoritesServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
