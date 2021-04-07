@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 /**
  * Class FavoritesServiceProvider
+ *
  * @package App\Providers
  */
 class FavoritesServiceProvider extends ServiceProvider
@@ -30,7 +31,7 @@ class FavoritesServiceProvider extends ServiceProvider
     private function registerMigrations()
     {
         $this->publishes([
-            __DIR__.'/../migrations/create_favorites_table.php' => database_path('migrations/'.date('Y_m_d_His').'_create_favorites_table.php'),
+            __DIR__ . '/../migrations/create_favorites_table.php' => database_path('migrations/'.date('Y_m_d_His').'_create_favorites_table.php'),
         ], 'migrations');
     }
 
