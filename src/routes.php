@@ -2,4 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::post('{favoritable_type}/{favoritable_id}/favorites', 'FavoriteController@toggle');
+Route::group(['prefix'=>'api', 'middleware'=> ['auth:api'] ], function () {
+    Route::post('{favoritable_type}/{favoritable_id}/favorites', 'FavoriteController@toggle');
+});

@@ -3,11 +3,11 @@
 namespace Smartopolis\Favorites\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Http\Resources\FavoriteResource;
 use App\Models\Traits\Favoritable;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Str;
 use Illuminate\Http\JsonResponse;
+use Smartopolis\Favorites\Resources\FavoriteResource;
 
 class FavoriteController extends Controller
 {
@@ -26,7 +26,7 @@ class FavoriteController extends Controller
      *
      * @return JsonResponse
      */
-    public function toggle($favoritableType, $favoritableId)
+    public function toggle($favoritableType, $favoritableId): JsonResponse
     {
         $favoritableClass = App::make($this->appModelsPath . Str::studly(Str::singular($favoritableType)));
 
