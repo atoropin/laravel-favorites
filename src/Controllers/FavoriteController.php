@@ -3,11 +3,11 @@
 namespace Smartopolis\Favorites\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Traits\Favoritable;
+use Smartopolis\Favorites\Traits\Favoritable;
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Str;
 use Illuminate\Http\JsonResponse;
-use Smartopolis\Favorites\Resources\FavoriteResource;
 
 class FavoriteController extends Controller
 {
@@ -35,7 +35,7 @@ class FavoriteController extends Controller
             $favoritableModel->toggleFavorite();
         }
 
-        return (new FavoriteResource($favoritableModel))
+        return (new JsonResource(['favorited'=> $favoritableModel->favorited]))
             ->response()
             ->setStatusCode(200);
     }
