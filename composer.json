@@ -10,7 +10,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Rir\\Favorites\\": "/src"
+      "Smartopolis\\Favorites\\": "/src"
     }
   },
   "extra": {
