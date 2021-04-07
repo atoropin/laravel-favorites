@@ -2,6 +2,7 @@
 
 namespace Smartopolis\Favorites;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
 /**
